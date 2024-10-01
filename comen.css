@@ -1,0 +1,178 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+header {
+    position: relative;
+    background-image: url(pexels-asadphoto-1430677.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilo para o header da página About */
+.about-header {
+    position: relative;
+    background-image: url(pexels-pixabay-262325.jpg); /* Nova imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    height: 80%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 240px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    font-weight: bold;
+
+
+}
+
+#home, #sobre, #map-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.search-bar {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo branco transparente */
+    color: white; /* Cor do texto */
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Cor do placeholder */
+}
+
+.search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo branco transparente */
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    background-image: url(pesquisa.png);
+    background-size: 20px 20px; /* Ajusta a imagem ao tamanho do botão */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Ajuste a altura conforme necessário */
+    padding: 0;
+}
+
+.search-bar button:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo laranja mais escuro e transparente */
+}
+
+h1, h2 {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e6f2ff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#lista-comentarios {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comentario {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.comentario:last-child {
+    border-bottom: none;
+}

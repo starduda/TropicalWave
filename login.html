@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Wave - Login</title>
+    <link rel="stylesheet" href="mimi.css">
+    <link rel="stylesheet" href="scriptt.js">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="register.html">
+    <link rel="stylesheet" href="index.html">
+</head>
+<body>
+    
+
+    <!-- Tela de Login/Cadastro -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <h2>Bem-vindo ao Tropical Wave</h2>
+            <p>Faça login ou crie uma conta para explorar as praias do Brasil!</p>
+
+            <!-- Formulário de Login -->
+            <form id="login-form">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <!-- Opção de cadastro -->
+            <p>Não tem uma conta? <a href="register.html" id="">Cadastre-se aqui</a></p>
+
+            <!-- Idiomas -->
+            <label for="idioma">Escolha o idioma:</label>
+            <select id="idioma" name="idioma">
+                <option value="pt-BR">Português (Brasil)</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="zh">中文 (Chinês)</option>
+                <option value="ja">日本語 (Japonês)</option>
+                <option value="pt-pt">Português (Portugal)</option>
+                <option value="Ko">Coreano</option>
+                <option value="ru-mo">Russo</option>
+            </select>
+
+            <p id="error-message" style="color: red;"></p>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Recupera os dados armazenados no localStorage
+            const storedEmail = localStorage.getItem('email');
+            const storedPassword = localStorage.getItem('password');
+
+            if (email === storedEmail && password === storedPassword) {
+                alert('Login bem-sucedido!');
+                window.location.href = 'index.html'; // Redireciona para a página inicial
+            } else {
+                // Mostra mensagem de erro
+                document.getElementById('error-message').innerText = 'E-mail ou senha incorretos';
+            }
+        });
+    </script>
+
+        </div>
+    </div>
+
+    <script src="scriptt.js"></script>
+</body>
+</html>

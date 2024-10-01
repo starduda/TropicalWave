@@ -1,0 +1,82 @@
+/* Definindo o background fixo */
+body {
+    background-image: url("5f78a563f8ba2c2dbd51bcdd50d3de75.jpg"); /* Coloque aqui o caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-attachment: fixed; /* Fixa o background para que não se mova */
+    background-position: center; /* Centraliza o background */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Estilo do modal (caixa de login/cadastro) */
+.modal {
+    display: block; /* Garante que o modal apareça */
+    position: fixed; /* Fixa o modal na tela, não rola junto com a página */
+    z-index: 999; /* Coloca o modal acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto; /* Centraliza verticalmente */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Fixa a posição da caixa no modal */
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #e67e22;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.modal-content button:hover {
+    background-color: #d35400;
+}
+
+.modal-content select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

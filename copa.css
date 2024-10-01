@@ -1,0 +1,72 @@
+/* Estilo para o título */
+#copa-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#copa-title h1 {
+    font-size: 2.5em;
+    color: #0066cc;
+}
+
+/* Estilo para a descrição */
+#copa-description {
+    margin: 20px auto;
+    width: 80%;
+    line-height: 1.8;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Estilo para a galeria de imagens */
+#copa-images {
+    margin: 40px auto;
+    text-align: center;
+}
+
+#copa-images h2 {
+    font-size: 2em;
+    color: #0066cc;
+    position: absolute;
+}
+
+
+        /* Estilo apenas para as imagens */
+        #copa-images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        #copa-images img {
+            margin: 10px;
+            border-radius: 10px;
+            width: 400px;
+            height: auto;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Efeito de zoom ao passar o mouse sobre as imagens */
+        #copa-images img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            #copa-images img {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+
+.image-gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-gallery{
+    margin-top: 50px;
+}

@@ -1,0 +1,68 @@
+/* Estilo para o título */
+#porto-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#porto-title h1 {
+    font-size: 2.5em;
+    color: #0066cc;
+}
+
+/* Estilo para a descrição */
+#porto-description {
+    margin: 20px auto;
+    width: 80%;
+    line-height: 1.8;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Estilo para a galeria de imagens */
+#porto-images {
+    margin: 40px auto;
+    text-align: center;
+}
+
+#porto-images h2 {
+    font-size: 2em;
+    color: #0066cc;
+    position: absolute;
+}
+
+
+        /* Estilo apenas para as imagens */
+        #porto-images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        #porto-images img {
+            margin: 10px;
+            border-radius: 10px;
+            width: 400px;
+            height: auto;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Efeito de zoom ao passar o mouse sobre as imagens */
+        #porto-images img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            #porto-images img {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+
+.image-gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
